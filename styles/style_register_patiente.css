@@ -1,3 +1,6 @@
+:root{
+  --colorh2: #6D7D96;  
+}
 * {
     padding: 0;
     margin: 0;
@@ -26,7 +29,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 #menu ul {
     display: flex;
     flex-direction: row;
@@ -86,11 +88,17 @@ form h2 {
     display: flex;
     justify-content: center;
     padding: 25px 0 10px 0;
+    color: var(--colorh2);
+    font-weight: bold;
+    font-size: 34px;
+    
 }
 
 form label {
-    font-size: 12px;
     padding: 5px 0;
+    color: #3E5679;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 form input {
@@ -102,6 +110,12 @@ form input:focus{
     outline: none;
     border: 2px solid #5075FA;
 
+}
+
+form input::placeholder{
+    color: #6D7D96;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 form button {
