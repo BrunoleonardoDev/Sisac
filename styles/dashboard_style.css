@@ -1,0 +1,127 @@
+:root {
+    --padding-side-cards: 3rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 43.5rem 1fr;
+    flex-direction: row;
+    gap: 6rem;
+    margin: 3.5rem auto;
+    padding: 0 var(--padding-side);
+    width: 100%;
+    max-width: 1440px;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.patient-dashboard {
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.patient-header {
+    display: flex;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: var(--header-patient-background);
+}
+
+.patient-header-content {
+    padding: var(--padding-side-cards);
+}
+.patient-header-content span {
+    font-size: 1.6rem;
+    color: var(--text-main);
+}
+
+.patient-avatar {
+    border-radius: 10rem;
+    border: 2px solid #fff;
+    z-index: 7;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+}
+
+.patient-content {
+    position: relative;
+    padding: var(--padding-side-cards);
+    padding-top: 5rem;
+}
+
+.patient-content h2 {
+    font-size: 1.6rem;
+    color: var(--text-main);
+}
+
+.patient-content h2 span {
+    font-size: 1.6rem;
+    color: var(--text-blue);
+}
+
+.patient-content p {
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: var(--text-main);
+}
+
+.scheduling,
+.queries {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--white-header);
+    border-radius: 0.5rem;
+    padding: 2.3rem var(--padding-side-cards);
+}
+
+.scheduling-data,
+.queries-data {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.scheduling-data h2,
+.queries-data h2 {
+    font-size: 2rem;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.scheduling-data p {
+    font-size: 6.2rem;
+    color: var(--text-blue);
+}
+
+.scheduling-img,
+.queries-img {
+    width: 11rem;
+}
+
+.main-right {
+    background-color: var(--white-header);
+    border-radius: 0.5rem;
+}
+
+.queries-data-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.queries-data-2 p {
+    font-size: 1.4rem;
+    color: var(--text-main);
+}
+
+.main-right h2 {
+    font-size: 2.2rem;
+    padding: 1.6rem 2rem;
+    color: var(--text-main);
+}

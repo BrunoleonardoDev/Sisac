@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Dashboard — SISAC</title>
+
+        <link rel="stylesheet" href="../styles/dashboard_style.css" />
+        <link rel="stylesheet" href="../styles/global_style.css" />
+        <link rel="stylesheet" href="../styles/header.css" />
+
+        <!-- TESTE DASH -->
+        <link rel="stylesheet" href="../styles/table.css" />
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300,400,500,600,700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-content">
+                    <img
+                        class="header-logo"
+                        src="../Images/SISAC.svg"
+                        alt="SISAC"
+                    />
+                    <div class="header-container-gravatar">
+                        <img
+                            class="gravatar"
+                            src="../Images/avatar.png"
+                            alt="Avatar"
+                        />
+                        <p>Vinícius</p>
+                        <button class="header-button">
+                            <img src="../Images/settings.svg" alt="SISAC" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                      <a href="#" class="menu-actived">
+                        <i data-feather="grid"></i>
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i data-feather="calendar"></i>
+                        Agendar Consulta
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i data-feather="user"></i>
+                        Especialidades
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i data-feather="list"></i>
+                        Lista de Agendamentos
+                      </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main-left">
+                <div class="patient-dashboard">
+                    <header class="patient-header">
+                        <div class="patient-header-content">
+                            <span>Bem-vindo de volta!</span>
+                            <span>Sisac Dasboard</span>
+                        </div>
+                        <img src="../Images/dashboard-ilustration.svg" alt="" />
+                    </header>
+                    <div class="patient-content">
+                        <img class="patient-avatar"
+                            src="../Images/avatar.png"
+                            alt="Foto do usuário"
+                            width="90"
+                            height="90"
+                        /> 
+                      <h2>Vinicius Guedes</h2>
+                      <h2><span>26 Anos</span></h2>
+                      <p>Paciente</p>
+                  </div>
+                </div>
+                <div class="scheduling">
+                    <div class="scheduling-data">
+                        <h2>Agendamentos</h2>
+                        <p>50</p>
+                    </div>
+                    <img
+                        class="scheduling-img"
+                        src="../Images/scheduling.svg"
+                        alt="Imagem Agendamentos"
+                    />
+                </div>
+                <div class="queries">
+                    <div class="queries-data">
+                        <h2>Consulta</h2>
+                        <div class="queries-data-2">
+                            <p>Fisioterapia</p>
+                            <p>Dr.Renan</p>
+                            <p>20-10-2020</p>
+                            <p>14:00 às 15:00</p>
+                        </div>
+                    </div>
+                    <img
+                        class="queries-img"
+                        src="../Images/scheduling-2.svg"
+                        alt="Imagem Agendamentos"
+                    />
+                </div>
+                </div>
+            </div>
+            <div class="main-right">
+                <h2>Últimos Agendamentos</h2>
+                    <table>
+                        <!-- Cabeçalho da tabela -->
+                        <thead>
+                            <tr class="first-line">
+                                <th>Sequência</th>
+                                <th>Médico</th>
+                                <th>Data</th>
+                                <th>Hora</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Corpo da tabela -->
+                        <tbody>
+                            <tr class="first-line">
+                                <td>1</td>
+                                <td>Dr. Renan</td>
+                                <td>20-04-2022</td>
+                                <td>14:00 às 14:30</td>
+                                <td>Realizado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </main>
+
+        <script>
+          feather.replace()
+        </script>
+    </body>
+</html>

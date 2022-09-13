@@ -1,0 +1,22 @@
+:root {
+    --blue-text: #5075fa;
+    --blue-header: #e1efff;
+    --white-header: #ffffff;
+    --text-main: #6d7d96;
+    --text-blue: #a1c2f5;
+    --background: #f8f8fb;
+    --row-background: #f8f9fa;
+    --row-stroke: #e0e5ec;
+    --header-patient-background: #d4dbf9;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
